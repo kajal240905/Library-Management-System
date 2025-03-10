@@ -1,0 +1,261 @@
+*{
+    
+    margin:0px;
+    padding:0px;
+    
+
+}
+.hidden{
+    display:none;
+}
+.Firstpage {
+    background-image: url('assets/image1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    margin-bottom:10px;
+  }
+  
+  .logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo2 img {
+    height: 30vh;
+    width: 80vw;
+    margin: auto;
+    opacity: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .Firstpage .box {
+  
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+  }
+  
+  .box img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .box h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+
+ 
+
+.Secondpage{
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(131, 201, 219); 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}  
+
+
+
+.Secondpage .container {
+    width: 400px;  
+    height:65%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Secondpage .header {
+    width: 400px;
+    padding: 0px 0px;
+    background-color: rgb(230, 221, 185);
+    border-radius: 10px 10px 0 0;
+}
+
+.Secondpage .header img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.Thirdpage{
+    background-image: url('assets/third.jpg');
+    background-repeat: none;
+    background-size: cover;
+    width:100vw;
+    height:100vh;
+   
+}
+.Thirdpage .bookDetails{
+    display: flex;
+    flex-direction:column;
+    margin-left:40px;
+    margin-top:10px;
+    padding-top:100px;
+}
+
+.Thirdpage .box{
+    background-color:rgb(7, 53, 61);
+    color:white;
+    border-radius: 8px;
+    margin-top:20px;
+    text-align: center;
+    height:50px;
+    padding-top:6px;
+    
+    font-size: 22px;
+    width:40vw;
+}
+
+
+
+
+
+
+
+
+
+
+.authBox h2 {
+    font-size: 16px;
+    color: red;
+    margin: 30px 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputField {
+    margin: 20px 0;
+    border: grey;
+}
+
+
+.inputField:hover{
+    background-color: azure;
+}
+
+.btn button {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn button:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+
+
+
+
+.main{
+    
+    position: relative;
+    display: inline-block;
+
+}
+.main img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1; 
+}
+
+ .menu {
+    font-family: sans-serif;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    padding-top: 80px;
+    margin-left: 40px;
+
+    z-index: 2; 
+} 
+ .av ,.issue, .return ,.requests {
+    
+    width: 32vw;
+    height:8vh;
+    background-color: rgb(78, 39, 39);
+    color: white;
+
+
+    border: 2px solid black;
+    border-radius: 2%;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center; 
+    z-index: 2; 
+}
+@media (max-width: 768px) {
+    .Firstpage .box {
+        
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .Secondpage .container {
+        width: 80%;
+        height: 70%;
+    }
+
+    .Thirdpage .bookDetails {
+        margin-left: 20px;
+    }
+
+    .menu {
+        padding-top: 40px;
+        margin-left: 20px;
+    }
+
+    .av, .issue, .return, .requests {
+        width: 80vw;
+        height: 10vh;
+    }
+}
